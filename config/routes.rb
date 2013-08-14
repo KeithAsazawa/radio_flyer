@@ -1,4 +1,12 @@
 RadioFlyer::Application.routes.draw do
+  get "songs/index"
+
+  get "songs/upload"
+
+  get "songs/delete"
+
+  root :to => 'songs#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
