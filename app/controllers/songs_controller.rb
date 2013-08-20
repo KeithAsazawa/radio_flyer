@@ -1,11 +1,17 @@
 class SongsController < ApplicationController
 	
   def index
+  	@songs = Song.all
   end
 
-  def upload
+  def create
+  	@song = Song.new(params[:song])
+  		if @song.save
+  			redirect_to root_path
+  		end
   end
 
-  def delete
+  def destroy
+  	@song = Song.destroy
   end
 end

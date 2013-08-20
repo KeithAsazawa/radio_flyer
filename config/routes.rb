@@ -1,9 +1,8 @@
 RadioFlyer::Application.routes.draw do
-  get "songs/index"
 
-  get "songs/upload"
+  resources :songs
 
-  get "songs/delete"
+  get 'create' => 'songs#create'
 
   root :to => 'songs#index'
 

@@ -4,6 +4,8 @@ gem 'rails', '3.2.13'
 gem 'aws-sdk'
 gem 'jquery-rails'
 gem 'paperclip', '~> 3.0'
+gem 'simple_form'
+gem 'bootstrap-sass'
 
 group :development do
 	gem 'sqlite3'
