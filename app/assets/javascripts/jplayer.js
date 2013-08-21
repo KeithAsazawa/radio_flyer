@@ -4,6 +4,7 @@ $(document).ready(function(){
       swfPath: "/js/jplayer",
       supplied: "mp3"
     });
+  
   $('a.play').click(function(e) {
       e.preventDefault();
       var title = $(this).attr('alt'); 

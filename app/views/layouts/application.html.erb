@@ -3,7 +3,7 @@
 <head>
   <title>RadioFlyer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" href="/assets/jplayer.blue.monday.css" rel="stylesheet" />
+  <link type="text/css" href="/assets/jplayer.midnight.black.css" rel="stylesheet" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -11,8 +11,8 @@
   <script type="text/javascript" src="/assets/jquery.jplayer.min.js"></script>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<%= yield %>
+	</div>
 </body>
 </html>
